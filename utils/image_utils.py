@@ -2,15 +2,13 @@ from PIL import Image, ImageOps
 import numpy as np
 
 def preprocess_image(image):
-    # To handle images with transparency by converting them to a white background image
-    if image.mode == 'RGBA' or (image.mode == 'P' and 'transparency' in image.info):
-        mask = image.split()[-1]
-        bg = Image.new("RGB", image.size, (255, 255, 255))
-        bg.paste(image, mask=mask)
-        image = bg
-    elif image.mode == 'LA':
-        image = ImageOps.grayscale(image)
-    
+    if image.mode == 'RGBA':
+        image = image.convert("RGBA")
+        canvas = Image.new('RGB', image.size, (255, 255, 255))
+        canvas.paste(image, mask=image.split()[3]) 
+        image = canvas
+    elif image.mode in ['LA', 'P']:
+        image = ImageOps.grayscale(image.convert('RGBA'))
     # Resized the image to 28x28 pixels, maintaining aspect ratio
     aspect_ratio = min(28 / image.size[0], 28 / image.size[1])
     new_size = (int(image.size[0] * aspect_ratio), int(image.size[1] * aspect_ratio))
