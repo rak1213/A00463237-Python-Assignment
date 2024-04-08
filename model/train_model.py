@@ -45,7 +45,7 @@ def train_and_evaluate(model, train_images, train_labels, test_images, test_labe
     print(f"Test accuracy: {test_acc}")
     return model
 
-def save_model(model, path='digit_classifier_model_1.keras'):
+def save_model(model, path='digit_classifier_model.keras'):
     model.save(path)
 
 def main():
