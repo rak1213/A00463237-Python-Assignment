@@ -41,7 +41,6 @@ An image classification Streamlit app that identifies digits (0-9) in uploaded i
 
 - Users can upload square images of digits for classification.
 - The model automatically resizes uploaded images for processing.
-- Built using the model from class sessions.
 
 ![Digit Classifier App](app_screenshots/digit_classifier.png)
 
