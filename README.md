@@ -2,7 +2,15 @@
 
 ## Submitted by : A00463237
 
+## Streamlit Cloud Deployment
+
+Please visit the following URL to interact with the deployed application:
+
+- [A00463237 Streamlit Application](https://a00463237-pythonassignment.streamlit.app/)
+
+
 This repository hosts the Python assignment for creating interactive Streamlit applications focused on cryptocurrency analysis and an image classifier for digit recognition. The assignment is divided into three parts:
+
 
 ## Part 1: Stock Details App
 
@@ -12,16 +20,19 @@ This Streamlit application leverages the CoinGecko API to present an interactive
 - Maximum and minimum prices during that timeframe.
 - Dates when the coin traded at its highest and lowest.
 
-### API Used
-
-- Coin List: `https://api.coingecko.com/api/v3/coins/list`
+![Cryptocurrency Comparison App](app_screenshots/crypto_comparison.png)
 
 ## Part 2: Coin Comparison App
 
 Building on the first app, this Streamlit application allows users to compare the price performance of two cryptocurrencies. Features include:
 
 - Overlaid price performance graphs of two selected coins.
-- Interactive time frame selection (1 week, 1 month, 1 year, 5 years).
+- Interactive time frame selection (1 week, 1 month, 1 year).
+
+![Cryptocurrency Detail App](app_screenshots/crypto_detail.png)
+
+* Note : The api does not allow to fetch data for 5 years.
+
 
 ## Part 3: Image Classifier
 
@@ -31,15 +42,14 @@ An image classification Streamlit app that identifies digits (0-9) in uploaded i
 - The model automatically resizes uploaded images for processing.
 - Built using the model from class sessions.
 
+![Digit Classifier App](app_screenshots/digit_classifier.png)
+
+
 ### Test Accuracy of the Image Classifier Model
 
 - Test accuracy: 0.9919000267982483
 
-## Streamlit Cloud Deployment
 
-Please visit the following URL to interact with the deployed application:
-
-- [Streamlit Application](https://streamlit.io/cloud)
 
 
 ## How to Use
