@@ -20,7 +20,7 @@ This Streamlit application leverages the CoinGecko API to present an interactive
 - Maximum and minimum prices during that timeframe.
 - Dates when the coin traded at its highest and lowest.
 
-![Cryptocurrency Comparison App](app_screenshots/crypto_comparison.png)
+![Cryptocurrency Detail App](app_screenshots/crypto_detail.png)
 
 ## Part 2: Coin Comparison App
 
@@ -29,7 +29,8 @@ Building on the first app, this Streamlit application allows users to compare th
 - Overlaid price performance graphs of two selected coins.
 - Interactive time frame selection (1 week, 1 month, 1 year).
 
-![Cryptocurrency Detail App](app_screenshots/crypto_detail.png)
+![Cryptocurrency Comparison App](app_screenshots/crypto_comparison.png)
+
 
 * Note : The api does not allow to fetch data for 5 years.
 
