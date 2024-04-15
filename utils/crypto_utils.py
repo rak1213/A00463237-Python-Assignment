@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # Constants for API key and headers
-API_KEY = 'CG-DnoEtgZyQAMKkQJ5KPCMyi6X'
+API_KEY = 'CG-rLsKkP6h4yigghhWQ9hwgZwN'
 HEADERS = {"x-cg-demo-api-key": API_KEY}
 
 def fetch_all_coins_list():
